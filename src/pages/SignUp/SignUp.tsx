@@ -2,7 +2,7 @@ import React from 'react';
 import {FiArrowLeft, FiMail, FiLock, FiUser} from 'react-icons/fi';
 import {Form} from '@unform/web';
 
-import {Background,Container,Content} from './styles';
+import {Background, Container,Content} from './styles';
 
 import logo from '../../assets/logo.svg';
 import Input from '../../components/Input';
@@ -20,7 +20,7 @@ export const SignUp: React.FC =()=>{
       <Content>
         <img src={logo} alt="GO BARBER" />
 
-        <Form initialData={{nome: 'Rudinei' }} onSubmit={handleSubmit}>
+        <Form  onSubmit={handleSubmit}>
           <h1>Faça seu cadastro</h1>
 
           <Input name="nome"
